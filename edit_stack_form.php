@@ -258,6 +258,9 @@ class qtype_stack_edit_form extends question_edit_form {
 
         $mform->addElement('submit', 'verify', stack_string('verifyquestionandupdate'));
         $mform->registerNoSubmitButton('verify');
+        
+        $mform->addElement('submit', 'floating_save', stack_string('save'));
+        $mform->registerNoSubmitButton('floating_save');
 
         // Inputs.
         foreach ($inputnames as $inputname => $counts) {
